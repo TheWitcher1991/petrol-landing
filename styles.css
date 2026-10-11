@@ -164,9 +164,11 @@ main, .footer { width: min(100%, var(--page-width)); margin-inline: auto; }
   .hero__copy p { max-width: 360px; margin: 12px 0 18px; font-size: 15px; }
   .pill-button { min-height: 42px; padding: 6px 14px; font-size: 14px; }
   .pill-button img { width: 19px; height: 19px; }
-  .hero__art { top: auto; bottom: 0; left: -24%; width: 148%; height: auto; object-fit: contain; }
+  .hero__art { top: auto; bottom: 0; left: -1%; width: 148%; height: auto; object-fit: contain; }
   .hero__fade { height: 95px; }
   .benefits { display: flex; height: auto; min-height: 890px; flex-direction: column; align-items: center; gap: 12px; margin-top: 20px; padding: 138px 18px 100px; }
+
+
   .benefits__background { object-position: center; }
   .benefits__heading { top: 42px; }
   .benefit-card { position: relative; top: auto; left: auto; width: min(100%, 345px); max-width: 345px; aspect-ratio: 345 / 260; flex: none; }
@@ -220,4 +222,19 @@ main, .footer { width: min(100%, var(--page-width)); margin-inline: auto; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+@media (max-width: 550px) {
+    .results {
+        height: 450px;
+    }
+
+    .industries__background {
+        width: 100%;
+        left: 0;
+    }
+
+    .industries {
+        height: 480px;
+    }
 }
