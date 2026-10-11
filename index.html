@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171717" />
+    <meta name="description" content="PETROL — роботизированная система автоматической покраски автомобилей и сельхозтехники. Самообучение, стабильное качество и снижение расхода краски." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://example.com/" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="PETROL" />
+    <meta property="og:title" content="PETROL — робот для автоматической покраски" />
+    <meta property="og:description" content="Роботизированная система с самообучением для покраски автомобилей и сельхозтехники." />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/assets/hero-car-robot.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>PETROL — автоматический робот для покраски</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://example.com/#organization",
+            "name": "PETROL",
+            "url": "https://example.com/",
+            "logo": "https://example.com/assets/petrol-logo.svg",
+            "email": "petrishev.danil@yandex.ru",
+            "telephone": "+7-918-777-40-08",
+            "description": "Разработка роботизированных систем автоматической покраски автомобилей и сельхозтехники."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://example.com/#website",
+            "url": "https://example.com/",
+            "name": "PETROL",
+            "inLanguage": "ru-RU",
+            "publisher": { "@id": "https://example.com/#organization" }
+          }
+        ]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/graingert-wow/1.2.2/wow.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="about" aria-labelledby="hero-title">
+        <img class="hero__art" src="assets/hero-car-robot.png" alt="Промышленный робот наносит покрытие на кузов автомобиля" fetchpriority="high" />
+        <header class="site-header">
+          <a class="brand" href="#about" aria-label="PETROL — в начало">
+            <img src="assets/petrol-logo.svg" alt="PETROL" width="210" height="27" />
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Открыть меню">
+            <span></span><span></span>
+          </button>
+          <nav class="primary-nav" id="primary-nav" aria-label="Основная навигация">
+            <a href="#about">О проекте</a>
+            <a href="#robot">Робот</a>
+            <a href="#benefits">Почему мы</a>
+            <a href="#industries">Для кого</a>
+            <a class="primary-nav__contact" href="#contacts">Контакты <img src="assets/chevron-right.svg" alt="" /></a>
+          </nav>
+        </header>
+        <div class="hero__copy">
+          <h1 class="display-title hero__title" id="hero-title">Автоматический робот<br />для покраски</h1>
+          <p>3-осевой манипулятор с самообучением для авто и сельхозтехники</p>
+          <a class="pill-button" href="#robot">Узнать подробнее <img src="assets/chevron.svg" alt="" /></a>
+        </div>
+        <div class="hero__fade" aria-hidden="true"></div>
+      </section>
+
+      <section class="benefits" id="benefits" aria-labelledby="benefits-title">
+        <img class="benefits__background" src="assets/advantages-bg.png" alt="" aria-hidden="true" />
+        <div class="section-heading benefits__heading wow fadeInUp">
+          <h2 class="display-title" id="benefits-title">Робот меняет покраску</h2>
+          <p>Три причины внедрить нашу автоматизацию</p>
+        </div>
+        <div class="benefit-card benefit-card--quality wow fadeInUp" data-wow-delay="100ms">
+          <img src="assets/advantage-cards-texture.png" alt="" aria-hidden="true" />
+          <div class="benefit-card__copy"><strong class="display-title">2-3%</strong><span>допустимый<br />брак</span></div>
+        </div>
+        <div class="benefit-card benefit-card--savings wow fadeInUp" data-wow-delay="200ms">
+          <img src="assets/advantage-cards-texture.png" alt="" aria-hidden="true" />
+          <div class="benefit-card__copy"><strong class="display-title">до 25%</strong><span>экономии</span></div>
+        </div>
+        <div class="benefit-card benefit-card--repeatability wow fadeInUp" data-wow-delay="300ms">
+          <img src="assets/advantage-cards-texture.png" alt="" aria-hidden="true" />
+          <div class="benefit-card__copy"><strong class="display-title">100%</strong><span>повторяемость</span></div>
+        </div>
+        <div class="benefits__fade" aria-hidden="true"></div>
+      </section>
+
+      <section class="how" id="robot" aria-labelledby="how-title" tabindex="0" data-step="0">
+        <div class="section-heading how__heading wow fadeInUp">
+          <h2 class="display-title" id="how-title">Как это работает</h2>
+          <p>Оператор задаёт траекторию один раз — дальше робот работает сам</p>
+        </div>
+        <div class="how__content" aria-live="polite" aria-atomic="true">
+          <div class="how__copy wow fadeInUp">
+            <h3 class="display-title" id="step-title">Оператор задает движение</h3>
+            <p id="step-description">Вручную двигает оси робота, показывая нужную траекторию</p>
+          </div>
+          <div class="how__visual wow fadeInUp" data-wow-delay="150ms">
+            <img id="step-image" src="assets/robot-step-1.png" alt="Оператор вручную задаёт роботу траекторию покраски" />
+          </div>
+        </div>
+        <button class="slider-arrow slider-arrow--previous" type="button" aria-label="Предыдущий шаг" data-step="previous"><img src="assets/chevron-left.svg" alt="" /></button>
+        <button class="slider-arrow slider-arrow--next" type="button" aria-label="Следующий шаг" data-step="next"><img src="assets/chevron-right.svg" alt="" /></button>
+        <div class="slider-dots" role="group" aria-label="Шаги работы робота">
+          <button type="button" aria-label="Шаг 1: оператор задаёт движение" aria-current="step" data-index="0"><span></span></button>
+          <button type="button" aria-label="Шаг 2: программа запоминает траекторию" data-index="1"><span></span></button>
+          <button type="button" aria-label="Шаг 3: робот красит сам" data-index="2"><span></span></button>
+        </div>
+      </section>
+
+      <section class="results" aria-labelledby="results-title">
+        <div class="section-heading results__heading wow fadeInUp">
+          <h2 class="display-title" id="results-title">Результаты в цифрах</h2>
+          <p>Как меняется покраска, благодаря автоматизации</p>
+        </div>
+        <img class="results__art wow fadeInUp" src="assets/results-figures.png" alt="Снижение расхода краски на 25 процентов, равномерность покрытия плюс 30–40 процентов, локализация компонентов 85 процентов" />
+        <div class="results__labels" aria-hidden="true">
+          <span>расход краски</span>
+          <span>равномерность покрытия</span>
+          <span>локализация компонентов</span>
+        </div>
+      </section>
+
+      <section class="industries" id="industries" aria-labelledby="industries-title">
+        <img class="industries__background" src="assets/industries-bg.png" alt="" aria-hidden="true" />
+        <div class="section-heading industries__heading wow fadeInUp">
+          <h2 class="display-title" id="industries-title">Для кого подходит</h2>
+          <p>Три отрасли, где наш робот полностью заменит ручной труд</p>
+        </div>
+        <div class="industry-showcase wow fadeInUp">
+          <img src="assets/industry-cards.png" alt="Роботизированная покраска в производстве, сельхозтехнике и автосервисах" />
+          <span class="industry-label industry-label--manufacturing">Производство</span>
+          <span class="industry-label industry-label--agriculture">Сельхозтехника</span>
+          <span class="industry-label industry-label--service">Автосервисы</span>
+        </div>
+        <div class="industries__fade" aria-hidden="true"></div>
+      </section>
+
+      <section class="contact" id="contacts" aria-labelledby="contact-title">
+        <img class="contact__art" src="assets/contact-robot.png" alt="Робот PETROL и знак вопроса" />
+        <div class="contact__copy wow fadeInUp">
+          <h2 class="display-title" id="contact-title">Спросите напрямую</h2>
+          <p>Напишите нам — обсудим детали,<br class="desktop-only" /> сроки и стоимость</p>
+          <a class="pill-button" href="mailto:petrishev.danil@yandex.ru">Написать <img src="assets/chevron.svg" alt="" /></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__brand-block">
+          <a class="brand footer__brand" href="#about" aria-label="PETROL — в начало"><img src="assets/footer-logo.svg" alt="PETROL" width="249" height="32" /></a>
+          <nav class="footer__nav" aria-label="Навигация в подвале">
+            <a href="#about">О проекте</a><a href="#robot">Робот</a><a href="#benefits">Почему мы</a><a href="#industries">Для кого</a>
+          </nav>
+        </div>
+        <address class="footer__contacts">
+          <strong>Контакты</strong>
+          <a href="mailto:petrishev.danil@yandex.ru"><img src="assets/email.svg" alt="" />petrishev.danil@yandex.ru</a>
+          <a href="tel:+79187774008"><img src="assets/phone.svg" alt="" />+7(918) 777-40-08</a>
+        </address>
+      </div>
+      <div class="grant">
+        <img src="assets/pytp.svg" alt="Платформа университетского технологического предпринимательства" width="106" height="81" />
+        <img src="assets/foundation.svg" alt="Фонд содействия инновациям" width="139" height="66" />
+        <p>Проект создан при поддержке Федерального государственного бюджетного учреждения "Фонд содействия развитию малых форм предприятий в научно-технической сфере" в рамках программы "Студенческий стартап" федерального проекта "Платформа университетского технологического предпринимательства"
+</p>
+      </div>
+      <div class="footer__bottom"><span>ООО «Петрол-сервис групп» © 2026</span></div>
+    </footer>
+  </body>
+</html>
